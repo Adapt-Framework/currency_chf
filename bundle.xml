@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<adapt_framework>
+    <bundle>
+        <name>currency_chf</name>
+        <label>Currency CHF</label>
+        <description>Swiss Francs</description>
+        <namespace>\adapt\currency\chf</namespace>
+        <version_status>release</version_status>
+        <availability>public</availability>
+        <copyright>2017 Matt Bruton</copyright>
+        <license>MIT</license>
+        <type>currency</type>
+        <version>1.0.0</version>
+        <website>http://www.adaptframework.com/documentaion/extentions/currency_chf</website>
+        <depends_on>
+            <bundle>
+                <name>adapt</name>
+                <version>2.0</version>
+            </bundle>
+            <bundle>
+                <name>currency</name>
+                <version>1.0</version>
+            </bundle>
+        </depends_on>
+        <settings>
+            <category name="Default currency">
+                <setting>
+                    <name>Default currency</name>
+                    <label>Default currency</label>
+                    <default_value>chf</default_value>
+                </setting>
+            </category>
+        </settings>
+        <schema>
+            <add>
+                <table name="currency">
+                    <record>
+                        <name>chf</name>
+                        <label>Swiss franc</label>
+                        <iso_code>CHF</iso_code>
+                        <decimal_places>2</decimal_places>
+                        <decimal_separator>.</decimal_separator>
+                        <thousands_separator>,</thousands_separator>
+                        <symbol_whole>CHF</symbol_whole>
+                        <symbol_partial>Rp</symbol_partial>
+                        <symbol_whole_html>CHF</symbol_whole_html>
+                        <symbol_partial_html>Rp</symbol_partial_html>
+                    </record>
+                </table>
+            </add>
+        </schema>
+    </bundle>
+</adapt_framework>
